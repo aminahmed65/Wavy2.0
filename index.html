@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oceans</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!-- Setting Up.. The Four Quadrants-->
+
+<!-- Atlantic Ocean Top Left Block-->
+<div class="tl" onclick="atlanticOcean()"></div>
+
+<!-- Pacific Ocean Top Left Block-->
+<div class="tr"></div>
+
+<!-- Indian Ocean Top Left Block-->
+<div class="bl"></div>
+
+<!-- Artic Ocean Top Left Block-->
+<div class="br"></div>
+
+
+<!-- Setting Up.. Each Pop-up-->
+
+<!-- Atlantic Ocean Pop-up-->
+<div id="ao">
+	<!-- Atlantic Ocean Cancel Button-->
+	<button  id="aox" onclick="hideAo()">X</button>
+</div>
+
+
+
+
+
+	<!-- Scripts if po io ar visibility = visible and/or opacity 1 set to 0-->
+
+	<script>
+	// Clickable function for the Atlantic Ocean. //
+	function atlanticOcean(){
+		document.getElementById('ao').style.opacity='1';
+		document.getElementById('ao').style.visibility='visible';
+	}
+
+	// Cancel Function for the Atlantic Ocean.   //
+	function hideAo(){
+		document.getElementById('ao').style.opacity='0';
+		document.getElementById('ao').style.visibility='hidden';
+	}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+/*	Top Left	blur black and white*/
+.tl { 
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+    border:solid #000;
+    border-width: 0 3px 3px 0;
+    background-image: url('media/wave1.jpg');
+  	background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+    }
+
+/*	Top Right   */
+.tr { 
+	position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 50%;
+   	background: blue;
+    border:solid #000;
+    border-width: 0 0 3px 0;
+    }
+
+/*	Bottom Left	*/
+.bl { 
+	position: absolute;
+    top: 50%;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background: yellow;
+    border:solid #000;
+    border-width: 0 3px 0 0;
+    }
+
+/*	Bottom Right	
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cutout_text
+}*/
+.br { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	background: green;
+    } 
+
+/*	Atlantic Ocean Pop-up	*/
+#ao{
+	position: absolute;
+	left: 6%;
+    right: 6%;
+    bottom: 10%;
+    top: 10%;
+    background-color: #333333;
+    border-radius: 35px 35px 35px 35px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+    border: solid black 2px;
+}
+
+/*	Atlantic Ocean Cancel Button  */
+#aox{
+	float: right;
+	border-top-right-radius: 35px;
+	border: solid black 0px;
+	background-color: #333333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-bottom-left-radius: 35px;
+    outline: none;
+
+}
+#aox:hover {
+    background: red;
+    color:white;
+}
